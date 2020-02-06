@@ -5,13 +5,17 @@ pipeline{
 
 	stages{
 		stage("print variable"){
-			VARIABLE= "variable"
-			echo $VARIABLE
+			steps{
+				VARIABLE= "variable"
+				echo $VARIABLE
+			}
 		
 		}
 		stage("print key"){
-			KEY= "key"
-			echo $KEY
+			steps{
+				KEY= "key"
+				echo $KEY
+			}
 		}
 	}
 }
